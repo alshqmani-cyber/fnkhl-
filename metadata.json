@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix: Pigeon Breeding Tracker",
+  "description": "An application to track pigeon registry, breeding cycles, pedigree lineages, and health logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

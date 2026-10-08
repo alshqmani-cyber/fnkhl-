@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-50: #fcf8f2;
+  --color-brand-100: #f7ede0;
+  --color-brand-500: #d97706;
+  --color-brand-600: #b45309;
+  --color-brand-700: #78350f;
+  
+  --color-pigeon-dark: #0f172a;
+  --color-pigeon-slate: #334155;
+}
+
+body {
+  font-family: var(--font-sans);
+  direction: rtl;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars for dashboard views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pedigree Tree lines animation and styling */
+.pedigree-node {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.pedigree-node::after {
+  content: '';
+  position: absolute;
+  background-color: #cbd5e1;
+}
+
+/* Glassmorphism subtle rules */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
